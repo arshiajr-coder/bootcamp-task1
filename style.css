@@ -1,0 +1,158 @@
+@font-face {
+    font-family: vazir-reg;
+    src: url(./assets/font/Vazir-Regular.woff) format("woff");
+}
+
+@font-face {
+    font-family: vazir-light;
+    src: url(./assets/font/Vazir-Light.woff) format("woff");
+}
+
+@font-face {
+    font-family: vazir-bold;
+    src: url(./assets/font/Vazir-Bold.woff) format("woff");
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: vazir-bold;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    padding: 3rem;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.header_title {
+    font-size: 1.8rem;
+    margin-bottom: 80px;
+}
+
+.flex {
+    display: flex;
+}
+
+.requests-section {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.request-box {
+    justify-content: space-between;
+    font-size: 1.2rem;
+    height: 103px;
+    width: 300px;
+    margin-bottom: 55px;
+}
+
+
+.upload-doc {
+    color: rgb(27, 88, 132);
+    font-size: 1.4rem;
+    align-items: center;
+}
+
+.upload-doc span {
+    padding: 3px 8px;
+    background-color: rgb(172, 204, 230);
+    color: rgb(27, 88, 132);
+    border-radius: 4px;
+}
+
+.request_detail--join {
+    font-family: vazir-bold;
+    font-size: 1.5rem;
+    margin-top: 6px;
+}
+
+.request_detail--id, .request_detail--id span {
+    font-family: vazir-light;
+    font-size: 1rem;
+    margin-bottom: 6px;
+    color: #737272;
+}
+
+.request_detail--user {
+    align-items: center;
+    font-size: 1.3rem;
+}
+
+.request_user--icon {
+    width: 25px;
+    height: 25px;
+    border-radius: 4px;
+    background-color: rgb(24, 177, 139);
+    margin-left: 5px;
+}
+
+.request-box-right {
+    flex-direction: column;
+}
+
+.request-box-left {
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.request-date {
+    font-size: 1rem;
+    color: #a2a2a2;
+    text-align: left;
+    margin-top: 5px;
+}
+
+.view-request {
+    color: #fff;
+    background-color: rgb(24, 177, 139);
+    font-family: vazir-light;
+    outline: 0;
+    border: 0;
+    padding: 10px 12px;
+    border-radius: 5px;
+}
+
+@media screen and (min-width: 640px) {
+    .container {
+        align-items: normal
+    }
+
+    .requests-section {
+        grid-template-columns: repeat(2, 1fr);
+        width: 100%;
+    }
+
+    .request-box-container{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .request-box {
+        width: 270px;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+
+    .requests-section {
+        width: 100%;
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media screen and (min-width: 1280px) {
+    .request-box {
+        width: 320px;
+    }
+}
